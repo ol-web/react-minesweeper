@@ -1,0 +1,116 @@
+@font-face {
+    font-family: Honey Room;
+    font-style: normal;
+    src: url("./fonts/HoneyRoom.ttf") format("truetype")
+}
+
+html {
+    background: #879bb9;
+    font-family: "Honey Room", Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+}
+
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1,
+p,
+label {
+    text-shadow: 1px 1px #cacaca;
+}
+
+h1 a {
+    color: #254879;
+}
+
+.minesweeper__restart {
+    background: #bdbdbd;
+    border-left: 2px solid #fefefe;
+    border-top: 2px solid #fefefe;
+    border-bottom: 2px solid #7b7b7b;
+    border-right: 2px solid #7b7b7b;
+    box-sizing: border-box;
+    padding: 5px;
+    user-select: none;
+    display: block;
+    font-size: 24px;
+    outline: 0;
+}
+
+.minesweeper__restart:active {
+    transform: translate(1px, 1px);
+}
+
+.minesweeper__header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: #bdbdbd;
+    border-left: 2px solid #fefefe;
+    border-top: 2px solid #fefefe;
+    border-bottom: 2px solid #7b7b7b;
+    border-right: 2px solid #7b7b7b;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.minesweeper__options {
+    display: flex;
+    flex-direction: column;
+}
+
+.minesweeper__options>div {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.minesweeper__options label {
+    width: 75%;
+    display: block;
+}
+
+.minesweeper__options input {
+    border: 0;
+    width: 25%;
+    display: block;
+    padding: 10px;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    background: #3c4d65;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+footer {
+    background: #3c4d65;
+    margin-top: auto;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer a, footer p {
+    color:#cccccc;
+    text-shadow:none;
+}
