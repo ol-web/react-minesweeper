@@ -2,6 +2,8 @@
 
 react-minesweeper is a classic minesweeper game written as a React component. You can set the amount of fields and a bomb chance. Styles are only applied by CSS classes so it's easy to customize.
 
+[Link to the demo](https://ol-web.github.io/react-minesweeper/)
+
 * * *
 
 ### Installation:
@@ -9,6 +11,14 @@ react-minesweeper is a classic minesweeper game written as a React component. Yo
 `npm install --save react-minesweeper`  
 
 ### Usage:
+
+Import the default styling as shown in the demo page or create your own styles
+
+```javascript
+import "react-minesweeper/lib/minesweeper.css";
+```
+
+Render the component
 
 ```javascript
  <Minesweeper
