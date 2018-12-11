@@ -30,8 +30,8 @@
     <script src="js/index.js"></script>
     <script>
         if ('serviceWorker' in navigator) {
-            var swName = "sw";
-            navigator.serviceWorker.register(swName + '.js')
+            var swName = "sw.js";
+            navigator.serviceWorker.register(swName)
                 .then(function (registration) {
                     console.log("SW registered!", registration);
                 })

@@ -2,7 +2,7 @@ import "../../../lib/minesweeper.css";
 
 import React from 'react';
 import { render } from 'react-dom';
-import Minesweeper from "../../../lib/Minesweeper";
+import Minesweeper from "../../../lib/dist/Minesweeper";
 
 class App extends React.Component {
     state = {

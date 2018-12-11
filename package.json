@@ -1,10 +1,10 @@
 {
   "name": "react-minesweeper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-minesweeper is a classic minesweeper game written as a React component. You can set the amount of fields and a bomb chance. Styles are only applied by CSS classes so it's easy to customize.",
   "author": "ol-web",
   "license": "MIT",
-  "main": "lib/Minesweeper.js",
+  "main": "lib/dist/Minesweeper.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/oL-web/react-minesweeper"
@@ -16,6 +16,7 @@
     "component"
   ],
   "scripts": {
+    "babel": "babel lib/src/Minesweeper.js --out-file lib/dist/Minesweeper.js --minify true ",
     "dev": "parcel demo/src/index.html --out-dir demo/dist/ ",
     "prebuild": "rimraf demo/dist",
     "build": "parcel build demo/src/index.html --out-dir demo/dist/ --no-source-maps  --public-url \".\"",
@@ -23,18 +24,21 @@
     "serve": "serve demo/dist"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.5.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
     "parcel-bundler": "^1.10.1",
     "postcss-modules": "^1.4.1",
+    "react-dom": "^16.6.3",
     "rimraf": "^2.6.2",
     "serve": "^10.1.1",
-    "workbox-cli": "^3.6.2",
-    "react-dom": "^16.6.3"
+    "react": "^16.6.3",
+    "workbox-cli": "^3.6.2"
   },
   "peerDependencies": {
     "react": "^16.6.3"
